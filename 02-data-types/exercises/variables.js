@@ -18,20 +18,21 @@
 //    B. Assigning a value to a variable
 //
 
-// A. Declaring a variable
+// // A. Declaring a variable
 // var myFirstVariable
-
-// B. Assigning a value to a variable
-// myFirstVariable = 'Hello World'
-
-// Combined:
-// var mySecondVariable = 'Hello Moon'
-
-
-
+// //
+// // // B. Assigning a value to a variable
+// // // myFirstVariable = 'Hello World'
+// //
+// // // Combined:
+// // var mySecondVariable = 'Hello Moon'
+// //
+// console.log( myFirstVariable)
 //
-// 2. Invoking/Calling our variables
 //
+// //
+// // 2. Invoking/Calling our variables
+// //
 // console.log( myFirstVariable ) // => 'Hello World'
 
 
@@ -73,10 +74,17 @@
 //
 
 // 1. Save a string into a variable and console.log it
+var whatevs = "Sarah"
 // 2. Save a number into a variable and console.log it
+var someNumber = 15
 // 3. Save a boolean into a variable and console.log it
+var thisMaybe = false
 // 4. Add two numbers together and save the result to a variable
+var sumOfThis = 30 + 2
 // 5. Declare a variable and assign a string of your first name to it; declare another variable and assign a string of your last name to it; declare a third variable and assign it the value of the first variable + the second variable and console.log it
+var first = 'Chris'
+var last = 'Bowerbank'
+var firstAndLast = first + ' ' + last
 
 /**
  * ES2015
