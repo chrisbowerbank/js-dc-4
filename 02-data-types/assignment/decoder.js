@@ -3,7 +3,12 @@
  * Create an empty array and store it in a variable named code.
  */
 
+
  // Your code here
+ var code = [,,,]
+ console.log(code)
+ console.log(code.length)
+
 
  /**
   * Question 2
@@ -14,6 +19,12 @@
   */
 
 // Your code here
+code.push('x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n', 'i' ,'t', 'l', 'a', 'v', 'o', 'x', 'e', 'r')
+code.push('o','m','c')
+console.log(code)
+console.log(code.length)
+
+
 
 /**
  * Question 3
@@ -22,6 +33,9 @@
  */
 
 // Your code here
+code.pop()
+code.shift()
+console.log(code)
 
 /**
  * Question 4
@@ -29,6 +43,8 @@
  */
 
 // Your code here
+code.reverse()
+console.log(code)
 
 /**
  * Question 5
@@ -37,6 +53,9 @@
  */
 
 // Your code here
+console.log(code.length)
+code [22] =  'e'
+console.log(code)
 
 /**
  * Question 6
@@ -45,6 +64,12 @@
  */
 
 // Your code here
+code [4] = '  '
+code [13] = '  '
+console.log(code)
+
+
+
 
 /**
  * Question 7
@@ -53,3 +78,6 @@
  */
 
  // Your code here
+code.join(' ')
+console.log(code)
+//haha more ovaltine please nooooo!!!
