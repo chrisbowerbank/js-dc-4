@@ -100,9 +100,12 @@
 // A. `for` loops
 
 // A basic `for` loop
-// for (var i = 0; i < 5; i++) {
-//   console.log( i )
+// for (var i = 0; i < 10; i++ ) {
+//   console.log(i)
 // }
+
+
+
 
 // A basic `for` loop with an array
 // var grades = [87, 95.5, 40, 79, 20]
@@ -140,6 +143,13 @@
 
 
 // B. `while` loops
+
+var x = 15
+
+while ( x >= 10 ) {
+  console.log( x )
+  x--
+}
 
 // A basic `while loop`
 // console.log( 'while loop' )
