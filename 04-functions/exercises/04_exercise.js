@@ -20,6 +20,29 @@ deckOfCards.
 
 */
 
+var i = 0
+
+function createDeck( suits, ranks) {
+  var suits = ['hearts', 'clubs', 'spades', 'diamonds']
+  var ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king'
+  
+  for( i = 0; i < 13; i++ ) {
+    console.log( ranks[i] + ' of ' + suits[0] )
+  } for( i = 0; i < 13; i++ ) {
+      console.log( ranks[i] + ' of ' + suits[1] )
+  } for( i = 0; i < 13; i++ ) {
+      console.log( ranks[i] + ' of ' + suits[2] )
+  } for( i = 0; i < 13; i++ ) {
+      console.log( ranks[i] + ' of ' + suits[3] )
+  }
+
+}
+
+var deckOfCards = createDeck( suits, ranks)
+
+console.log(deckOfCards)
+
+
 
 
 
@@ -31,6 +54,24 @@ card from deckOfCards whenever it is called.
 Don't worry about removing the card from deckOfCards.
 
 */
+//
+function getRandomCard() {
+  var randomCard = parseInt( ( Math.random() * 520 ) )
+  // Will be 1 - 52
+
+  console.log( randomCard )
+}
+
+getRandomCard()
+
+
+
+
+
+
+
+
+
 
 
 

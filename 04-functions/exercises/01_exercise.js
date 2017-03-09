@@ -6,6 +6,12 @@ Write a function that `console.log`s 'Hello World' and call it.
 
 */
 
+function functionTheHero() {
+  console.log('Hello World')
+}
+
+functionTheHero()
+
 
 
 
@@ -22,3 +28,13 @@ Use both of your functions a few times. If there's time, write
 functions that add or subtract more than 1 from myNumber.
 
 */
+
+
+var myNumber = 8
+
+function addOne() {
+  myNumber++
+  //myNumber = myNumber + 1
+}
+
+console.log( myNumber )
