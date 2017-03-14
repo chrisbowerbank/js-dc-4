@@ -19,11 +19,28 @@ properties, one of which is a method
 
 
 
+var Gto = {
+  'topspeed': 250,
+  'color': 'yellow',
+  'horsepower': 700,
+  gpsLocation: function ( coordinates ) {
+    console.log( "The car's coordinates:" + [ Math.random(), Math.random()] )
+  }
+
+}
+
+
+
+
 /*
 
 Get one of the properties from your object using dot notation
 
 */
+
+
+Gto.color
+console.log( Gto.color )
 
 
 
@@ -33,6 +50,10 @@ Get one of the properties from your object using bracket notation
 
 */
 
+Gto['color']
+
+
+
 
 /*
 
@@ -41,9 +62,15 @@ bracket notation
 
 */
 
+Gto.horsepower = 350
+console.log( Gto.horsepower )
+
 
 /*
 
 Call your car's method
 
 */
+
+
+Gto.gpsLocation()

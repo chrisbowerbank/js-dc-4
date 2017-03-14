@@ -21,7 +21,7 @@ executed before moving on!
 
 */
 
-// Declaring our first object
+// // Declaring our first object
 // var Person = {
 //   'first name': 'Zakk',
 //   lastName: 'Fleischmann',
@@ -35,23 +35,29 @@ executed before moving on!
 //     console.log( 'Hello, ' + (name || 'you') + '! Hope you are well!' )
 //   }
 // }
-
-
-/*
-
-2. Working with Objects
-
-*/
-
-// Getting values from our object
+//
+//
+//
+//
+//
+//
+//
+//
+// /*
+//
+// 2. Working with Objects
+//
+// */
+//
+// // Getting values from our object
 // Person['first name'] // Bracket notation
 // Person.lastName // Dot notation
-
-// Setting values from our object (with reassignment)
+//
+// // Setting values from our object (with reassignment)
 // Person.favoriteColors = 'just green'
 // Person.height.feet = 10
 // Person['height']['inches'] = 6
-
+//
 // console.log( Person.height )
 
 // Calling methods
@@ -96,62 +102,62 @@ executed before moving on!
 */
 
 // Part 1
-// var Car = {
-//   model: '',
-//   make: '',
-//   year: '',
-//   color: '',
-//   engineStart: false,
-//   turnOn: function() {
-//     this.engineStart = true
-//   },
-//   turnOff: function() {
-//     this.engineStart = false
-//   },
-//   drive: {
-//     forward: function() { console.log( 'drive forward' ) },
-//     left: function() { console.log( 'drive left' ) },
-//     right: function() { console.log( 'drive right' ) },
-//     reverse: function() { console.log( 'drive reverse' ) }
-//   }
-// }
-
-// Part 2
-function Car ( model, make, year, color ) {
-
-  this.model = model
-  this.make = make
-  this.year = year
-  this.color = color
-  this.engineStart = false
-
-  this.turnOn = function() {
-    return this.engineStart = true
+var Car = {
+  model: '',
+  make: '',
+  year: '',
+  color: '',
+  engineStart: false,
+  turnOn: function() {
+    Car.engineStart = true
+  },
+  turnOff: function() {
+    Car.engineStart = false
+  },
+  drive: {
+    forward: function() { console.log( 'drive forward' ) },
+    left: function() { console.log( 'drive left' ) },
+    right: function() { console.log( 'drive right' ) },
+    reverse: function() { console.log( 'drive reverse' ) }
   }
-
-  this.turnOff = function() {
-    return this.engineStart = false
-  }
-
-  this.drive = {
-    forward: function() { console.log( 'drive forward' )},
-    left: function() { console.log( 'drive left' )},
-    right: function() { console.log( 'drive right' )},
-    reverse: function() { console.log( 'drive reverse' )}
-  }
-
 }
 
-var MyCarolla = new Car('Carolla', 'Toyota', 2016, 'Red' )
-
-var MyPrius = new Car()
-MyPrius.model = 'Prius'
-MyPrius.make = 'Toyota'
-MyPrius.year = 2009
-MyPrius.color = 'Grey'
-
-console.log( MyCarolla )
-console.log( MyPrius )
+// Part 2
+// function Car ( model, make, year, color ) {
+//
+//   this.model = model
+//   this.make = make
+//   this.year = year
+//   this.color = color
+//   this.engineStart = false
+//
+//   this.turnOn = function() {
+//     return this.engineStart = true
+//   }
+//
+//   this.turnOff = function() {
+//     return this.engineStart = false
+//   }
+//
+//   this.drive = {
+//     forward: function() { console.log( 'drive forward' )},
+//     left: function() { console.log( 'drive left' )},
+//     right: function() { console.log( 'drive right' )},
+//     reverse: function() { console.log( 'drive reverse' )}
+//   }
+//
+// }
+//
+// var MyCarolla = new Car('Carolla', 'Toyota', 2016, 'Red' )
+//
+// var MyPrius = new Car()
+// MyPrius.model = 'Prius'
+// MyPrius.make = 'Toyota'
+// MyPrius.year = 2009
+// MyPrius.color = 'Grey'
+//
+// console.log( MyCarolla )
+// console.log( MyPrius )
 
 // Part 3
 // var Car = function( model, make, year, color ) {

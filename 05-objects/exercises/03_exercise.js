@@ -20,3 +20,20 @@ Apple, Red, 0.78
 Nuts, Brown, 2.23
 
 */
+
+
+
+var importJSON = require('./data.json')
+console.log( importJSON['Store Name'] + "'s Current Stock")
+
+for ( var i = 0; i < importJSON.Foods.length; i++ ) {
+  console.log( importJSON.Foods[i].name + ', ' + importJSON.Foods[i].color + ', ' + importJSON.Foods[i].price)
+}
+
+
+
+
+
+//if you want to pull it directly from it, here you go:
+// console.log( importJSON['Store Name'] + "'s Current Stock")
+//console.log( itemHeadings.join(', ')
