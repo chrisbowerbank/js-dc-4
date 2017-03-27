@@ -22,6 +22,32 @@ How we we create elements in JavaScript and add them to the page?
 
 */
 
+var canvas = document.getElementById('canvas')
+
+function createCanvas( canvas ) {
+
+  for ( var i = 0 ; i < ( 50 * 50 ) ; i++ ){
+
+    var square = document.createElement( 'div' )
+
+    square.className = 'square'
+
+    canvas.appendChild( square )
+
+    canvas.addEventListener("mouseover", function( e ){
+      var selectedColor = document.querySelector('input').value
+      canvas.style.background = selectedColor
+      console.log("it's working")
+      canvas.style.zIndex = 99
+    })
+
+  }
+
+}
+
+createCanvas( canvas )
+
+
 
 
 /*
@@ -40,6 +66,26 @@ hints:
 */
 
 
+var button = document.querySelector('button')
+
+var paintBrush = document.querySelector('.brush')
+
+button.addEventListener("click", function( e ) {
+  e.preventDefault()
+
+  var currentColor = document.querySelector('input').value
+  console.log( currentColor )
+  //changing the brush color-field
+  paintBrush.style.background = currentColor
+
+})
+
+console.log( paintBrush )
+
+
+
+
+
 
 /*
 
@@ -51,3 +97,9 @@ Hints:
 (2) think about what event we might want to attach our event handler too; what mouse events are there that might make sense?
 
 */
+
+
+canvas.addEventListener("mouseover", function( e ){
+  var selectedColor = document.querySelector('input').value
+  canvas.style.background = selectedColor
+})
