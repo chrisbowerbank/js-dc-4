@@ -34,12 +34,6 @@ function createCanvas( canvas ) {
 
     canvas.appendChild( square )
 
-    canvas.addEventListener("mouseover", function( e ){
-      var selectedColor = document.querySelector('input').value
-      canvas.style.background = selectedColor
-      console.log("it's working")
-      canvas.style.zIndex = 99
-    })
 
   }
 
@@ -98,8 +92,9 @@ Hints:
 
 */
 
-
 canvas.addEventListener("mouseover", function( e ){
   var selectedColor = document.querySelector('input').value
-  canvas.style.background = selectedColor
+  event.target.style.background = selectedColor
+  console.log("it's working")
+  canvas.style.zIndex = 99
 })
