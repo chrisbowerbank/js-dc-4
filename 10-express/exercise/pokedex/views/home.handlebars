@@ -1,0 +1,10 @@
+<h1>Pokedex</h1>
+
+{{#if pokemon}}
+<ul>
+  {{#each pokemon}}
+    <li>
+      <a href="/{{this.name}}">{{ this.name }}</a>
+    </li>
+  {{/each}}
+{{/if }}
