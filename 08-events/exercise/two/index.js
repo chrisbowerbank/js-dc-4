@@ -12,6 +12,15 @@ Discuss Together
 
 */
 
+// var button = document.querySelector('button')
+//
+// button.addEventListener('click',function( event ) {
+//   console.log( event )
+// })
+
+
+
+
 
 
 /*
@@ -25,3 +34,17 @@ Do Independently, then review together
 4. Add an event listener to the button on the page so that when it is clicked, the value of counterIndex is incremented by 1 and the new value is added to the page
 
 */
+var myCounter = document.getElementsByTagName('h1')[0]
+var counterIndex = 0
+
+window.onload = function() {
+  myCounter.innerText = 'Counter: ' + counterIndex
+}
+
+
+var button = document.querySelector('.js-button')
+button.addEventListener("click", function() {
+  counterIndex++
+  myCounter.innerText = 'Counter: ' + counterIndex
+
+})

@@ -19,6 +19,10 @@ Hint: think about DOM methods that we can call on DOM elements we've already pul
 
 */
 
+var galleryList = document.querySelectorAll('.js-gallery-item')
+
+
+
 
 
 
@@ -33,6 +37,13 @@ To start, create a variable called slideCount that is equal to the number of sli
 To get the width, try getBoundingClientRect() or offsetWidth.
 
 */
+
+
+var slideCount = galleryList.length
+var slideWidth = document.querySelctor('.js-gallery_-item').getBoundingClientRect( galleryList[1] )
+
+
+
 
 
 
@@ -50,6 +61,21 @@ Also, it may seem counterintuitive but we want to save the result of calling set
 Create a function called transitionSlide that, for now, just `console.log`'s 'Called!' ever 5000 miliseconds
 
 */
+
+//
+// function slider {
+//
+//
+//
+// }
+//
+//
+// var timer = setInterval( slider , 5000 )
+//
+// function transitionSlide() {
+//
+//   console.log('Called!')
+// }
 
 
 
@@ -74,12 +100,47 @@ Hint: delta should always be a negative number
 */
 
 
+var currentSlide = 1
+
+function slider() {
+
+
+
+}
+
+
+// var timer = setInterval( slider , 5000 )
+//
+// function transitionSlide() {
+//   if ( currentSlide < slideCount ){
+//     galleryList.style.transform =
+//     currentSlide++
+//   } else {
+//     galleryList.style.transform = 0
+//     currentSlide = 1
+//   }
+//
+//
+//   console.log('Called!')
+// }
+
+
+
+
+
+
+
+
+
 /*
 
 Step 5:
 To setup - we need to comment out the timer we created in Step 3 and our transitionSlide function in Step 4. We don't need our timer anymore and we're goinog to rewrite our transitionSlide function below! Whoo hoo!
 
 */
+
+
+
 
 
 /*
@@ -90,6 +151,22 @@ We're going to create an event and event handler on the .js-nav-list element.
 Create a variable called sliderNav and assign it to the .js-nav-list element. Then add an event listener for a click event and pass it a reference to the function transitionSlide (which we're going to rewrite below)
 
 */
+
+function transitionSlide( event ){
+  e.preventDefault()
+  var currentDirection = e.target.direction
+
+  if ( (currentSlide = 1 && currentDirection = left) || ( currentSlide = galleryList.length + 1 && e.target.direction = right ) ) {
+    //then we should not translate our gallery
+  } else ( (currentDirection = left && currentSlide = 0 ) || ( currentDirection = right && currentSlide = galleryList.length)) {
+    return
+  }
+
+}
+
+
+document.querySelctor('.js-nav-list').addEventListener( "click", function( transitionSlide ){
+})
 
 
 

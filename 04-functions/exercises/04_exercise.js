@@ -25,7 +25,7 @@ var i = 0
 function createDeck( suits, ranks) {
   var suits = ['hearts', 'clubs', 'spades', 'diamonds']
   var ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king'
-  
+
   for( i = 0; i < 13; i++ ) {
     console.log( ranks[i] + ' of ' + suits[0] )
   } for( i = 0; i < 13; i++ ) {
@@ -59,7 +59,7 @@ function getRandomCard() {
   var randomCard = parseInt( ( Math.random() * 520 ) )
   // Will be 1 - 52
 
-  console.log( randomCard )
+  console.log( deckOfCards[randomCard] )
 }
 
 getRandomCard()

@@ -14,13 +14,18 @@ Getting stuff from the DOM
 
 // Get #title
 // var title = document.getElementById('title')
+
+// var title = document.getElementsByTagName( 'h1' )
+
+
+// var title = document.querySelector('p')
 // or document.querySelector('title')
 
 
 // Get the text of #title
 // console.log( title ) // will print the html element
-// console.log( title.textContent ) // prints the text
-// console.log( typeof title.textContent ) // string
+console.log( title.textContent ) // prints the text
+console.log( typeof title.textContent ) // string
 
 
 /*
@@ -35,11 +40,11 @@ Setting stuff in the DOM
 
 
 // Change the styeling of an element
-// console.log( title.style ) // object representing the element's styling
-// title.style.backgroundColor = 'blue'
-// title.style.padding = '2em'
-// title.style.width = '100%'
-// title.style.textAlign = 'center'
+console.log( title.style ) // object representing the element's styling
+title.style.backgroundColor = 'blue'
+title.style.padding = '2em'
+title.style.width = '100%'
+title.style.textAlign = 'center'
 
 
 /*

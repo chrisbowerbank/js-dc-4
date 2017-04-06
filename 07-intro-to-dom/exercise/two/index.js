@@ -47,9 +47,9 @@ To generate our table of contents we need to do a couple of things:
 
 for ( var i = 0 ; i < documentHeadings.length ; i++ ) {
 
-  var clonedStuff = documentHeadings.cloneNode(true)
+  var clonedStuff = documentHeadings[i].cloneNode(true)
   // this.documentHeadings[i].appendChild( tOfC )
-  document.getElementById('table-of-contents').appendChild( clonedStuff[i] )
+  document.getElementById('table-of-contents').appendChild( clonedStuff )
 
 }
 

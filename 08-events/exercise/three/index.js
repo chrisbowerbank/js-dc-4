@@ -15,11 +15,24 @@ Get an array of all the buttons on the screen. Write an event handler that just 
 
 
 
+// var buttons = document.querySelectorAll('.js-button')
+//
+// for ( var i = 0 ; i < buttons.length ; i++ ){
+//   buttons[i].addEventListener("click", function(event){
+//     console.log( event.target )
+//   })
+//
+// }
+
+
 /*
 
 Refactor your event handler so that it `console.log`s the event object. Poke around the event object
 
 */
+
+
+
 
 
 
@@ -43,3 +56,25 @@ Do one more refactor of the event handler. Your event handler should:
 Hint: any data that we define in our html with data-* will be in our elements dataset property
 
 */
+
+
+var buttons = document.querySelectorAll('.js-button')
+var counterIndex = 0
+var counter = document.querySelector('h1')
+
+counter.innerText = 'Counter: ' + counterIndex
+
+
+for ( var i = 0 ; i < buttons.length ; i++ ){
+  buttons[i].addEventListener("click", function(event){
+
+    var incrementer = event.target.dataset.incrementer
+
+    counterIndex += parseInt (incrementer, 10 )
+
+    counter.innerText = 'Counter: ' + counterIndex
+
+
+  })
+
+}
