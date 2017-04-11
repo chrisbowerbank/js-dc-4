@@ -1,7 +1,21 @@
 var express = require('express')
 var exphbs = require('express-handlebars')
+var mongoose = require('mongoose')
 var bodyParser = require('body-parser')
 var path = require('path')
+
+var mongoose = require('mongoose')
+var Schema = mongoose.Schema
+
+var Entry = new Schema ({
+  id: Number,
+  author: String,
+  text: String
+})
+
+mongoose.connect('mongodb://localhost:27017/guestbook')
+
+
 
 var app = express()
 
@@ -38,7 +52,9 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/', function( req, res ) {
 
-  res.render('home', data)
+  Entry.find({}, function(err, quotes){
+    res.render( 'home', data )
+  })
 
 })
 
@@ -97,4 +113,6 @@ app
   })
 
 
-app.listen(3000)
+app.listen(3000, function(){
+  console.log('chris, it is working.')
+})
