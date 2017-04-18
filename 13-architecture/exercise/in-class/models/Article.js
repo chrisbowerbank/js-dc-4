@@ -11,6 +11,10 @@ var ArticleSchema = new Schema({
 
 var Article = mongoose.model( 'Article', ArticleSchema )
 
+<<<<<<< HEAD
 
 module.exports = Article
 //now go back to index.js to add in
+=======
+module.exports = Article
+>>>>>>> 8c0a0f9a6249997ae46beca7017ea97374c850c2

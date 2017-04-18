@@ -17,14 +17,21 @@ app.use(express.static('public'))
 
 app.use(bodyParser.urlencoded({extended: true}))
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8c0a0f9a6249997ae46beca7017ea97374c850c2
 // application routes (i.e. controller)
 app.get('/', function( req, res ) {
   // index route
   // list every article
 
+<<<<<<< HEAD
   Article.find({}, function(err, articles){
+=======
+  Article.find({}, function( err, articles ) {
+>>>>>>> 8c0a0f9a6249997ae46beca7017ea97374c850c2
 
     res.render('index', { articles: articles })
 
@@ -32,18 +39,43 @@ app.get('/', function( req, res ) {
 
 })
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8c0a0f9a6249997ae46beca7017ea97374c850c2
 app
   .get('/article/new', function( req, res ) {
     // new view
     // render template for creating a new article
+<<<<<<< HEAD
+=======
+
+    res.render('new')
+
+>>>>>>> 8c0a0f9a6249997ae46beca7017ea97374c850c2
   })
   .post('/article/new', function( req, res ) {
     // create a new article in the DB
     // render show view for new article
+<<<<<<< HEAD
   })
 
+=======
+
+    var newArticle = new Article({
+      url: req.body.url,
+      author: req.body.author,
+      title: req.body.title,
+      description: req.body.description
+    })
+
+    newArticle.save()
+
+    res.redirect('/')
+
+  })
+>>>>>>> 8c0a0f9a6249997ae46beca7017ea97374c850c2
 
   app.get('/article/:id', function( req, res ) {
     // show route
