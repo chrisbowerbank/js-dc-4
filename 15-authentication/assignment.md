@@ -10,8 +10,25 @@ Submit your idea for your final project! Remember to check out https://gallery.g
 
 Submit your idea by making a pull request answering the following questions (copy and paste them).
 
+
+
 1. Describe your idea, it's main features and core functionality.
+
+I am creating a living Premier League table that shows the standings of all 20 clubs including their wins, losses, draw, goals scored, goals conceded, goal differential (goals scored minus goals conceded), upcoming fixtures and more! As scores and results advance or are updated, the table will automatically update.
+
+The table will allow visitors to select one club as their favorite club. Once a club is selected as their favorite club, that club will be highlighted in the table upon returning to the site.
+
+I'd also like to have table rows expand upon clicking the table. The expansive area will feature recent form (results) of the team in that row, upcoming matches, and additional information like links to their club website, etc.
+
+
 
 2. What libraries or packages do you think you'll use?
 
+I will be using the following packages: express, express-handlebars, mongoose, body-parser, and nodemon. However, I may be using some other packages to help style and customize my table (still researching). For now I'm only using one handlebar view but I will make this project more complex by making the single view interactive in many ways!
+
+
+
+
 3. What data will your final project use?
+
+In terms of data, I've found API that hosts table information that's updated regularly here: http://api.football-data.org/v1/competitions/426/leagueTable. I will pull specific elements from this list
