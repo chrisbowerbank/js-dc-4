@@ -20,6 +20,8 @@ The table will allow visitors to select one club as their favorite club. Once a 
 
 I'd also like to have table rows expand upon clicking the table. The expansive area will feature recent form (results) of the team in that row, upcoming matches, and additional information like links to their club website, etc.
 
+Here's a link to my repository: https://github.com/chrisbowerbank/premierleague-table 
+
 
 
 2. What libraries or packages do you think you'll use?
