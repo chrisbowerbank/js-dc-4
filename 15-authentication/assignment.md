@@ -24,7 +24,7 @@ I'd also like to have table rows expand upon clicking the table. The expansive a
 
 2. What libraries or packages do you think you'll use?
 
-I will be using the following packages: express, express-handlebars, mongoose, body-parser, nodemon and cookie-parser! However, I may be using some other packages to help style and customize my table (still researching). For now I'm only using one handlebar view but I will make this project more complex by making the single view interactive in many ways!
+I will be using the following packages: express, express-handlebars, mongoose, body-parser, nodemon, cookie-parser and passport?! However, I may be using some other packages to help style and customize my table (still researching). For now I'm only using one handlebar view but I will make this project more complex by making the single view interactive in many ways!
 
 
 
